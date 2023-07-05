@@ -1,6 +1,7 @@
 function convert(Euro) {
-    const RUB = Euro * 97.69;
-    return RUB;
+    const dolar = 1.2;
+    const ruble = 64;
+    const priceInDollars = Euro * dolar;
+    const priceInRubles = priceInDollars * ruble;
+    return priceInRubles;
 }
-const x = convert(3);
-console.log("x: ", x);
